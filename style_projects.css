@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  padding: 0;
+  margin: 0;
+  background: rgb(40,40,40);
+  overflow-x: hidden;
+}
+
+.back {
+  position: absolute;
+  left: 15vw;
+  top: 3vh;
+  color: rgb(170,170,170);
+  cursor: pointer;
+  font-size: 2vw;
+  font-family: "Roboto", "Arial";
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.back:hover {
+  color: rgb(100,100,100);
+  transition: 0.3s;
+}
+
+.page {
+  position: relative;
+  color: rgb(220,220,220);
+  font-size: 3vw;
+  font-family: "Roboto", "Arial";
+  top: 9.5vh;
+  left: 15vw;
+  font-weight: bold;
+}
+
+.content-div {
+  width: 70vw;
+  height: auto;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 10vh;
+  background: rgba(150,150,150,0.2);
+  z-index: -50;
+}
+
+.header {
+  border-bottom: 15px solid rgb(40,40,40);
+  margin-bottom: 5vh;
+}
+
+.title {
+  width: 100%;
+  background-color: rgba(200,200,230,0.4);
+  padding-top: 3vh;
+  font-size: 2.5vw;
+  font-weight: bold;
+  color: rgb(30,30,30);
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.caption {
+  width:100%;
+  background-color: rgba(200,200,230,0.4);
+  padding-bottom: 3vh;
+  font-size: 1.25vw;
+  font-weight: bold;
+  margin-top: 0;
+  color: rgb(30,30,30);
+  text-align: center;
+}
+
+p {
+  color: rgb(220,220,220);
+  font-family: "Roboto", "Arial";
+  font-size: 1.25vw;
+  margin: auto;
+  width: 75%;
+  margin-top: 7vh;
+  line-height: 1.6;
+}
+
+.q_col {
+  display: inline-block;
+  width: 22%;
+}
+
+.quickly img {
+  height: 18vw;
+}
+
+.mm_col {
+  display: inline-block;
+  width: 40%;
+}
+
+.my_money img {
+  height: 37vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.row {
+  text-align: center;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media only screen and (max-width: 1100px) {
+  .row {
+    width: 80%;
+    margin: auto;
+  }
+
+  .q_col {
+    width: 45%;
+  }
+
+  .quickly img {
+    height: 30vw;
+  }
+
+  .mm_col {
+    width: 100%;
+  }
+
+  .my_money img {
+    height: 60vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .q_col {
+    width: 100%;
+  }
+
+  .quickly img {
+    height: 45vw;
+  }
+}
+
+.footer {
+  font-family: "Roboto", "Arial";
+  text-align: center;
+  padding-top: 3vh;
+  font-size: 1vw;
+  color: rgb(220,220,220); 
+  padding: 1vw;
+}
